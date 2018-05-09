@@ -15,6 +15,10 @@ export class AuthService {
     }
   }
 
+  logout() {
+    localStorage.removeItem('credential');
+  }
+
   isLoggedIn() {
     return localStorage.getItem('credential');
   }
