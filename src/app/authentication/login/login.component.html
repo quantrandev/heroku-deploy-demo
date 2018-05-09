@@ -4,6 +4,7 @@
     <div class="card">
       <div class="card-header text-white bg-info">Login</div>
       <div class="card-body">
+        <div class="alert alert-danger" *ngIf="isFail">Incorrect email or password</div>
         <form #f="ngForm" (ngSubmit)="submit(f)">
           <div class="form-group">
             <label for="">Email:</label>
